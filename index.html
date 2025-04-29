@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="assets/media/img1.png" alt="">
+    <script>
+        // 1
+        function z1() {
+            let a = parseInt(prompt("Введите число 1"))
+            let b = parseInt(prompt("Введите число 2"))
+            for(let i = a; i <= b; i++){
+                if(i % 2 == 0){
+                    console.log(i)
+                }
+            }
+        }
+        z1()
+
+        // 2
+        function z2() {
+            let c = parseInt(prompt("Введите число 1"))
+            let d = parseInt(prompt("Введите число 2"))
+            if(c < d){
+                console.log(c)
+            }
+            else {
+                console.log(d)
+            }
+        }
+        z2()
+
+        // 3
+        let styles = ["Джаз", "Блюз"]
+        console.log(styles)
+
+        styles.push("Рок-н-ролл")
+        console.log(styles)
+
+        let middle = Math.floor(styles.length/2)
+        styles[middle] = "Классика"
+        console.log(styles)
+
+        let first = styles.shift()
+        console.log(first)
+        console.log(styles)
+
+        styles.unshift("Рэп", "Регги")
+        console.log(styles)
+    </script>
+</body>
+</html>
